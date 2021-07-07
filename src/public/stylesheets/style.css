@@ -1,0 +1,186 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 0;
+  }
+
+  #header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+    #header {
+      font-size: 20px;
+    }
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+    
+    nav ul li {
+      float:left;
+    }
+    
+    nav ul li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    nav ul li a:hover {
+      background-color: rgb(255, 255, 255);
+      transition: 0.5s;
+    }
+
+    .titulo {
+        margin-left: 10px;
+      }
+
+
+
+
+
+
+
+      #tabla {
+        margin: 10px;
+        text-align: center;
+        
+      }
+      table, tr, td {
+        border-collapse: collapse;
+        border-bottom: 1px solid #797979;
+         margin: 5px;
+      }
+
+
+          tr:hover{
+              background-color: #fffbfb;
+          }
+      
+      
+          table {
+            width: 92%;
+            margin: 20px;
+            text-align: center;
+          }   
+      
+      
+          tr {
+              height: 25px;
+          }
+
+          th {
+              margin-left: 10px;
+              margin-right: 10px;
+          }
+          
+          thead {
+              background-color: #ffffff;
+              width: 100%;
+          }
+
+          table a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+
+          table a:hover {
+            background-color: rgb(255, 251, 251);
+            transition: 0.5s;
+          }
+
+          
+          .delete {
+              background-color: rgb(145, 0, 0);
+          }
+
+          .delete:hover {
+              background-color: red;
+          }
+
+          .edit {
+              background-color: rgb(0, 0, 124);
+          }
+
+          .edit:hover {
+            background-color: blue;
+        }
+
+
+
+    
+    .box {
+        width: 300px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        background: #ffffff;
+        border-radius: 20px;
+    }
+    
+ 
+    
+        .box h1 {
+            color: black;
+            font-weight: 500;
+            border-bottom: 3px solid white;
+        }
+    
+    
+    
+        .box input[type="text"],.box input[type="password"] {
+            border: 0;                      /*borde de los cuadritos*/
+            background: none;    
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid #1100ff;
+            padding: 14px 10px;
+            width: 200px;
+            color: black;
+            outline: none;                   /*para que el borde de los cuadritos no se resalte*/
+            border-radius: 20px;             /*para redondear extremos*/
+            transition: 0.25s;
+        } 
+    
+        .box input[type="text"]:focus,.box input[type="password"]:focus {
+            width: 280px;
+            height: 30px;
+            border-color: #00ffff;
+        } 
+    
+        .box button[type="submit"] {
+            background: #ffffff;
+            border: 0;                      /*borde de los cuadritos*/   
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            padding: 14px 25px;
+            color: black;
+            outline: none;                   /*para que el borde de los cuadritos no se resalte*/
+            border-radius: 20px;             /*para redondear extremos*/
+            transition: 0.25s;
+            cursor: pointer;
+        }
+    
+        .box button[type="submit"]:hover {
+            background: #008080;
+            border: 1px solid black;
+        }
+        

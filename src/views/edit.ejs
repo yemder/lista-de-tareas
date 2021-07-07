@@ -1,0 +1,29 @@
+<%- include ("template/cabecera", {tituloweb: 'Editar Tarea'}) %>
+
+<body>
+    
+
+
+    <div>
+        <form action="/update/<%= data.id %>" method="POST" class="box">
+            <h1>Editar Tarea</h1>
+            <div>
+                <input type="text" name="asig" value="<%= data.asig %>" class="form-input">
+            </div>
+            <div>
+                <input type="text" name="tit" value="<%= data.tit %>"class="form-input">
+            </div>
+            <div>
+                <input type="text" name="fa" value="<%= data.fa %>" class="form-input">
+            </div>
+            <div>
+                <input type="text" name="fe" value="<%= data.fe %>" class="form-input">
+            </div>
+            <div>
+                <input type="text" name="est" value="<%= data.est %>" class="form-input">
+            </div>
+            <button type="submit" >Guardar Cambios</button>
+        </form>
+    </div>
+
+</body>

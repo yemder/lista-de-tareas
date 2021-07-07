@@ -1,0 +1,44 @@
+<%- include ("template/cabecera", {tituloweb: 'Lista'}) %>
+
+<body>
+
+    <%- include ("template/nav") %>
+    
+   <div id="tabla">
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>Nº</th>
+                <th>Asignatura</th>
+                <th>Titulo</th>
+                <th>Fecha de Asignacion</th>
+                <th>Fecha de Entrega</th>
+                <th>Status</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+           <% if (data) { %>
+            <% for (var i = 0; i < data.length; i++) { %>
+                <tr>
+                    <th><%= (i + 1) %></th>
+                    <th><%= data[i].asig %></th>
+                    <th><%= data[i].tit %></th>
+                    <th><%= data[i].fa %></th>
+                    <th><%= data[i].fe %></th>
+                    <th><%= data[i].est %></th>
+                    <th>
+                        <a href="/delete/<%= data[i].id%>" class="delete">Eliminar</a>
+                    </th>
+                    <th>
+                        <a href="/update/<%= data[i].id%>" class="edit">Editar</a>
+                    </th>
+                </tr>
+            <% } %>
+          <% } %>
+        </tbody>
+    </table>
+   </div>
+
+</body>
+</html>
